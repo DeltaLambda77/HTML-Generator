@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+    <div id="insert-button-container">
+        <button onclick="insertDegree()" id="deg-btn">&deg;</button>
+        <button onclick="insertAnd()" id="and-btn">&amp;</button>
+        <button onclick="insertCopyright()" id="copyright-btn">&copy;</button>
+        <button onclick="insertRegistered()" id="registered-btn">&reg;</button>
+        <button onclick="insertEnDash()" id="endash-btn">&ndash;</button>
+        <button onclick="insertTrademark()" id="trademark-btn">&trade;</button>
+    </div>
+    
+    <div id="html-generator-container">
+        <h3><font>Description:</font></h3>
+
+        <p><font>Introducing the innovative, low-cost walk-behind turf
+        aerator from PlanetAir. By swapping tines, these aerators can
+        create deep vertical cuts or pull cores and process them right
+        inside the machine.</font></p>
+        <div id="introduction-button-container">
+            <button>X</button>
+            <button>+</button>
+        </div>
+        <p><font>The PlanetAir PA29 Aerator offers the following
+        features:</font></p>
+        <div id="features-button-container">
+            <button>X</button>
+            <button>+</button>
+        </div>
+
+        <ul style="list-style-type:square">
+            <li><font>Patented planetary gear drive system creates a
+            small incision while stirring soil beneath the cut, leaving
+            little disruption to the surface</font></li>
+
+            <li><font>Lightweight, corrosion-resistant aluminum
+            housing</font></li>
+
+            <li><font>Self-propelled with three speed low-maintenance
+            transmission</font></li>
+
+            <li><font>Low-cost, high performance machine with quick
+            return on investment</font></li>
+
+            <li><font>Briggs & Stratton Engine</font></li>
+
+            <li><font>Includes roller scrapers</font></li>
+
+            <li><font>(22) 1/8&quot; Shatter Knife Tine
+            Included</font></li>
+        </ul>
+        <div id="features-list-button-container">
+            <button>X</button>
+            <button>+</button>
+        </div>
+
+        
+        <br>
+
+        <h3><font>Specifications:</font></h3>
+        <div id="specifications-button-container">
+            <button>X</button>
+            <button>+</button>
+        </div>
+
+        <table id="t01" table="" style="font-family:Arial">
+            <tr>
+            <td>Engine</td>
+
+            <td>Briggs & Stratton 205 cc</td>
+            </tr>
+
+            <tr>
+            <td>Coring Knife Cultivation</td>
+
+            <td>&#10004</td>
+            </tr>
+
+            <tr>
+            <td>Core Processing</td>
+
+            <td>&#10004</td>
+            </tr>
+
+            <tr>
+            <td>Shatter Knife Cultivation</td>
+
+            <td>&#10004</td>
+            </tr>
+
+            <tr>
+            <td>Number of Tines</td>
+
+            <td>22</td>
+            </tr>
+
+            <tr>
+            <td>Aeration Working Width</td>
+
+            <td>29&quot;</td>
+            </tr>
+
+            <tr>
+            <td>Aeration Pattern</td>
+            <td>1.25&quot; rows</td>
+            </tr>
+
+            <tr>
+            <td>Drive Rollers</td>
+
+            <td>Aluminum - Front and Rear</td>
+            </tr>
+
+            <tr>
+            <td>Transmission</td>
+
+            <td>3-Speed Self-Propelled</td>
+            </tr>
+
+            <tr>
+            <td>Weight</td>
+
+            <td>205 lbs</td>
+            </tr>
+
+            <tr>
+            <td>Width</td>
+
+            <td>35&quot;</td>
+            </tr>
+
+            <tr>
+            <td>Length (without handle)</td>
+
+            <td>27&quot;</td>
+            </tr>
+
+            <tr>
+            <td>Height (without handle)</td>
+
+            <td>31&quot;</td>
+            </tr>
+
+            <tr>
+            <td>Height of Handle</td>
+
+            <td>41&quot;</td>
+            </tr>
+        </table>
+        <div id="table-row-button-container">
+            <button>X</button>
+            <button>+</button>
+        </div>
+        <br>
+
+        <h3><font>Video:</font></h3><font><iframe width="560"
+                height="315"
+                frameborder="0"
+                allowfullscreen=""></iframe></font>
+        <div id="video-button-container">
+            <button>X</button>
+            <button>+</button>
+        </div>
+<!---end of embedded video section--->
+    </div>
+
+    <div class="divider1">
+        <input type="text" value="" id="input">
+    </div>
+    
+    <textarea id="outside-textarea" value="Sample text" onclick="printActiveElement()"></textarea>
+
+    <form onsubmit="downloadHTML(this['name'].value, this['text'].value)">
+        <input type="text" name="name" value="test.html">
+        <textarea name="text" id="form-textarea" onclick="printActiveElement()"></textarea>
+        <input type="submit" value="Download">
+      </form>
+      
+
+    <script src="app.js"></script>
+</body>
+</html>
